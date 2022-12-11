@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    
+    
+    text-align: center;
+    align-items: center;
+    
+
+}
+.nav li{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    margin-left: 5px;
+    padding: 10px;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+
+    
+}
+.nav li:hover{
+    color: blueviolet;
+
+}
+.nav input{
+    display: flex;
+    float: right;
+    padding: 8px;
+    border-color: blueviolet;
+    background: transparent;
+    border-radius: 20px;
+    align-content: flex-end;
+    margin-left: 750px;
+    
+}
+.nav input:focus{
+    outline: none;
+}
+
+.nav button#btn{
+    margin-left: 10px;
+    color: blueviolet;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    
+}
+
+
+.nav button#btn:hover{
+    color: white;
+    border: none;
+    background-color: blueviolet;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    
+
+}
+.container #box1{
+    
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.container #box2{
+    margin: 20px;
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.container #box3{
+    margin: 20px;
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}

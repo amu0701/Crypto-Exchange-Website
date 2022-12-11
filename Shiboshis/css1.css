@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maincon{
+    display: grid;
+    
+    grid-template-columns:repeat( auto-fit,minmax(450px,300px));
+    grid-gap: 1rem;
+    
+
+
+}
+.container{
+    width: 400px;
+    height: 60px;
+    background-color: rgb(175, 151, 197);
+    border-radius: 1px;
+    padding: 30px;
+    margin: 20px
+}

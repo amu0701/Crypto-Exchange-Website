@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SHIBASWAP
+        
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scal=1.0">
+    <link rel="shortcut icon" type="image" href="https://s2.coinmarketcap.com/static/img/coins/200x200/5994.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+   
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">SHIBASWAP</h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a id="hom">HOME</a></li>
+                    <li><a href="minning.html">MINNING</a></li>
+                    <li><a href="nft.html">NFT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="burn.html">Burn_Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <form onsubmit= "search() "  >
+
+                    <input class="srch" type="search" id="input"  list="sc" name="" placeholder="Find your crypto">
+    
+                    <datalist id="sc" >
+                        <option id="shib" value="Shib"></option>
+                        <option value="Leash"></option>
+                        <option value="Bone"></option>
+                        <option value="Ethereum"></option>
+                        <option value="Bitcoin"></option>
+                        <option value="Polkadot"></option>
+                        <option value="Xec"></option>
+                        <option value="USDT"></option>
+                        <option value="BUSD"></option>
+                        <option value="Doge"></option>
+                        <option value="Wrx"></option>
+                        <option value="Lunc"></option>
+                        <option value="Luna"></option>
+                        <option value="other"></option>
+                    </datalist>
+                    <button  class="btn" onchange=" search()">Search</button>
+                </div>
+
+                </form>
+                
+
+        </div> 
+        <div class="content">
+            <h1>Online Trading & <span>MINNING</span><br> Source</h1><br>
+            <p class="par">SHIB coin is an ERC-20 token (meaning it’s built on the Ethereum blockchain),<br>
+                 and it powers the Shiba Inu ecosystem. A fixed supply of 1 quadrillion coins <br> were  minted,
+                  at launch (a quadrillion is a number followed by 15 zeros). <br>
+                  A full 50% of the initial supply of 1 quadrillion SHIB was locked in a Uniswap SHIB/ETH liquidity pool.</p>
+
+                <button class="cn"><a href="join.html">JOIN US</a></button>
+
+                <div class="form"  >
+                    <form onsubmit=" return validation()" action="loginpage.html">
+
+                        <h2>LOGIN HERE</h2>
+                        <input id="em" type="email" name="email" placeholder="Enter Your Wallet Address"  required>
+                        <input id="pass" type="password" name="" placeholder="Enter Your Wallet Pin" required>
+                        <button class="btnn" onclick="validation()">Login</button>
+                        <p class="link">Don't have an account<br>
+                        <a href="#">Sign up </a> here</a></p>
+                        <p class="liw">Log in with</p>
+    
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-skype"></i>
+                        </div>
+                    </form>
+                    
+
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function validation() 
+        {
+            var email= document.getElementById("em");
+            var pass = document.getElementById("pass");
+    
+            if (email.value=="amanrathod0701@gmail.com" && pass.value=="Pass@12345")
+            {
+                alert("login succesfully");
+                return true;
+            }
+            else if(email.value=="")
+            {
+                alert("Please feel the information")
+            }
+            else
+            {
+                alert("invalid email or password");
+                return false;
+
+             
+
+
+            }
+            
+        }
+
+        function search()
+        {
+            var x = document.getElementById("input").value;
+            if (x=="Shib")
+            {
+                URL="https://coinmarketcap.com/currencies/shiba-inu/";
+                window.open(URL);
+            }
+            else if (x=="Leash")
+            {
+                URL="https://coinmarketcap.com/currencies/doge-killer/";
+                window.open(URL);
+            }
+            else if (x=="Bone")
+            {
+                URL="https://coinmarketcap.com/currencies/bone-shibaswap/";
+                window.open(URL);
+            }
+            else if  (x=="Ethereum")
+            {
+                URL="https://coinmarketcap.com/currencies/ethereum/";
+                window.open(URL);
+            }
+            else if (x=="Bitcoin")
+            {
+                URL="https://coinmarketcap.com/currencies/bitcoin/";
+                window.open(URL);
+            }
+            else if (x=="Polkadot")
+            {
+                URL="https://coinmarketcap.com/currencies/polkadot-new/";
+                window.open(URL);
+            }
+            else if (x=="Xec")
+            {
+                URL="https://coinmarketcap.com/currencies/ecash/";
+                window.open(URL);
+            }
+            else if (x=="USDT")
+            {
+                URL="https://coinmarketcap.com/currencies/tether/";
+                window.open(URL);
+            }
+            else if (x=="BUSD")
+            {
+                URL="https://coinmarketcap.com/currencies/binance-usd/";
+                window.open(URL);
+            }
+            else if (x=="Doge")
+            {
+                URL="https://coinmarketcap.com/currencies/dogecoin/";
+                window.open(URL);
+            }
+            else if(x=="Wrx")
+            {
+                URL="https://coinmarketcap.com/currencies/wazirx/";
+                window.open(URL);
+            }
+            else if (x=="Lunc")
+            {
+                URL="https://coinmarketcap.com/currencies/terra-luna/";
+                window.open(URL);
+            }
+            else if (x=="Luna")
+            {
+                URL="https://coinmarketcap.com/currencies/terra-luna-v2/";
+                window.open(URL);
+            }
+            
+            else if (x=="other")
+            {
+                URL="https://coinmarketcap.com/";
+                window.open(URL);
+            }
+            else{
+                alert("Not found!!!!!");
+                
+            }
+
+        }
+        
+
+    </script>
+</body>
+</html>

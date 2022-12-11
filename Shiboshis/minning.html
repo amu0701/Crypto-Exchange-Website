@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIBASWAP</title>
+    <link rel="shortcut icon" type="image" href="https://s2.coinmarketcap.com/static/img/coins/200x200/5994.png">
+    <link rel="stylesheet" href="minning.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">SHIBASWAP</h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="loginpage.html">HOME</a></li>
+                    <li><a id="min">MINNING</a></li>
+                    <li><a href="nft.html">NFT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="burn.html">Burn_Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <form onsubmit= "search() "  >
+
+                    <input class="srch" type="search" id="input"  list="sc" name="" placeholder="Find your crypto">
+    
+                    <datalist id="sc" >
+                        <option id="shib" value="Shib"></option>
+                        <option value="Leash"></option>
+                        <option value="Bone"></option>
+                        <option value="Ethereum"></option>
+                        <option value="Bitcoin"></option>
+                        <option value="Polkadot"></option>
+                        <option value="Xec"></option>
+                        <option value="USDT"></option>
+                        <option value="BUSD"></option>
+                        <option value="Doge"></option>
+                        <option value="Wrx"></option>
+                        <option value="Lunc"></option>
+                        <option value="Luna"></option>
+                        <option value="other"></option>
+                    </datalist>
+                    <button  class="btn" onchange=" search()">Search</button>
+                </div>
+
+                </form>
+
+        </div> 
+        <div class="content">
+         <!--<h1><br><span>MINNING</span> <br></h1><br>
+            <p class="par">SHIB coin is an ERC-20 token (meaning it’s built on the Ethereum blockchain),<br>
+                 and it powers the Shiba Inu ecosystem. A fixed supply of 1 quadrillion coins were minted,<br>
+                  at launch (a quadrillion is a number followed by 15 zeros). <br>
+                  A full 50% of the initial supply of 1 quadrillion SHIB was locked in a Uniswap SHIB/ETH liquidity pool.</p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>-->
+            
+                <div class="form">
+                    <form onsubmit="confirm()">
+                        <h2>Mine Crypto Here</h2>
+                        <input type="text" id="crypto"  name="email" list="sugg" placeholder="Enter Crypto Name" required>
+                        <datalist id="sugg">
+                            <option value="Shib"></option>
+                            <option value="Leash"></option>
+                            <option value="Bone"></option>
+                            <option value="Ethereum"></option>
+                        </datalist>
+                        <input class="amount" id="amount1" type="number" name="" placeholder="Enter Crypto Amount" required>
+                        <button class="btnn" onclick="confirm()"><a href="#">Mine</a></button>
+    
+                        <p class="link">Please Enter Valid Entity<br>
+                        <a href="#"> </a> </a></p>
+                        
+                        <p class="liw">T&C applied</p>
+                    </form>
+
+                   <!--
+                       <div class="icons">
+                         <a href="#"><ion-icon name="logo-"></ion-icon></a>
+                         <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                         <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                         <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                         <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                       
+                        </div>
+                    --> 
+
+                </div>
+        <div class="minning-info">
+                    <h1>MINNING</h1><br>
+                    <p class="txt">
+                        Crypto mining is the process of creating individual blocks added to the blockchain by solving complex mathematical problems. 
+                        The purpose of mining is to verify cryptocurrency transactions and show proof of work, 
+                        adding this information to a block on the blockchain, which acts as a ledger for mining transactions.
+                    </p><br><br>
+        </div>    
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script>
+        function confirm()
+        {
+            let input1 = document.getElementById("crypto").value;
+            let input2 = document.getElementById("amount1").value;
+            if(input2>=1){
+
+                alert("You have mined :" +" "+ input2 +" "+ input1);
+            }
+            else{
+                alert("Please enter a valid number!!!!");
+            }
+
+        }
+        function search()
+        {
+            var x = document.getElementById("input").value;
+            if (x=="Shib")
+            {
+                URL="https://coinmarketcap.com/currencies/shiba-inu/";
+                window.open(URL);
+            }
+            else if (x=="Leash")
+            {
+                URL="https://coinmarketcap.com/currencies/doge-killer/";
+                window.open(URL);
+            }
+            else if (x=="Bone")
+            {
+                URL="https://coinmarketcap.com/currencies/bone-shibaswap/";
+                window.open(URL);
+            }
+            else if  (x=="Ethereum")
+            {
+                URL="https://coinmarketcap.com/currencies/ethereum/";
+                window.open(URL);
+            }
+            else if (x=="Bitcoin")
+            {
+                URL="https://coinmarketcap.com/currencies/bitcoin/";
+                window.open(URL);
+            }
+            else if (x=="Polkadot")
+            {
+                URL="https://coinmarketcap.com/currencies/polkadot-new/";
+                window.open(URL);
+            }
+            else if (x=="Xec")
+            {
+                URL="https://coinmarketcap.com/currencies/ecash/";
+                window.open(URL);
+            }
+            else if (x=="USDT")
+            {
+                URL="https://coinmarketcap.com/currencies/tether/";
+                window.open(URL);
+            }
+            else if (x=="BUSD")
+            {
+                URL="https://coinmarketcap.com/currencies/binance-usd/";
+                window.open(URL);
+            }
+            else if (x=="Doge")
+            {
+                URL="https://coinmarketcap.com/currencies/dogecoin/";
+                window.open(URL);
+            }
+            else if(x=="Wrx")
+            {
+                URL="https://coinmarketcap.com/currencies/wazirx/";
+                window.open(URL);
+            }
+            else if (x=="Lunc")
+            {
+                URL="https://coinmarketcap.com/currencies/terra-luna/";
+                window.open(URL);
+            }
+            else if (x=="Luna")
+            {
+                URL="https://coinmarketcap.com/currencies/terra-luna-v2/";
+                window.open(URL);
+            }
+            
+            else if (x=="other")
+            {
+                URL="https://coinmarketcap.com/";
+                window.open(URL);
+            }
+            else{
+                alert("Not found!!!!!");
+                
+            }
+
+        }
+        
+
+    
+    </script>
+    
+</body>
+</html>
+        
+        
+    </div>
+</body>
+</html>
